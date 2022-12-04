@@ -121,21 +121,6 @@ def TaskExecution():
             speak("i am going to sleep but you can call me anytime")
             break
 
-def Pass(pass_inp):
-
-    password = "Sector 16"
-
-    passss = str(password)
-
-    if passss == str(pass_inp):
-        speak("access granted")
-        Hotword()
-
-    else:
-        speak("Access not granted")
-
-
-
 
 def Hotword():
     while True:
@@ -148,11 +133,8 @@ def Hotword():
 
 
 if __name__ == "__main__":
-    speak("This needs password for access")
-    speak("Kindly Provide password to access")
-    passssss = takecommand()
+    Hotword()
 
-    Pass(passssss)
 
 
 
